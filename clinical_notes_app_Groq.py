@@ -16,11 +16,14 @@ st.markdown("""
     .app-header h1 { font-size: 1.75rem; font-weight: 700; color: #1a1a2e; margin: 0; }
     .app-header p { color: #6b7280; font-size: 0.95rem; margin: 0.25rem 0 0 0; }
 
-    .stTextArea textarea {
-        font-size: 0.95rem; line-height: 1.6;
-        border-radius: 10px; border: 1.5px solid #e5e7eb;
-        padding: 1rem; font-family: 'Georgia', serif; background: #fafafa;
-    }
+.stTextArea textarea {
+    font-size: 0.95rem; line-height: 1.6;
+    border-radius: 10px; border: 1.5px solid #374151;
+    padding: 1rem; font-family: 'Georgia', serif;
+    background: #1e1e2e;
+    color: #e5e7eb;
+    caret-color: #e5e7eb;
+}
     div[data-testid="stButton"] button {
         background: linear-gradient(135deg, #6366f1, #4f46e5);
         color: white; border: none; border-radius: 8px;
