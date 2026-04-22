@@ -481,7 +481,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-API_KEY = "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"
+API_KEY = "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"
 
 st.markdown("**Try a sample note:**")
 s_cols = st.columns(len(SAMPLE_NOTES))
