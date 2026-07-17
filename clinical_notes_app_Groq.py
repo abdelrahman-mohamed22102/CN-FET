@@ -9,6 +9,11 @@ import urllib.parse
 
 st.set_page_config(page_title="Clinical Notes Extractor", page_icon="🏥", layout="wide")
 
+API_KEY = st.secrets.get("GROQ_API_KEY")
+if not API_KEY:
+    st.error("GROQ_API_KEY is not set. Add it to `.streamlit/secrets.toml` (local) or your app's Secrets settings (Streamlit Cloud).")
+    st.stop()
+
 st.markdown("""
 <style>
     .main .block-container { padding: 2rem 3rem; max-width: 100%; }
