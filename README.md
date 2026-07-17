@@ -1,10 +1,29 @@
 # 🏥 Clinical Notes Extractor + CPG Agent
 
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?logo=streamlit&logoColor=white)
+![Groq](https://img.shields.io/badge/LLM-Groq%20Llama%203.3%2070B-orange)
+![License](https://img.shields.io/badge/status-demo-blue)
+
 A multi-agent Streamlit app that turns unstructured clinical notes into structured data and automatically surfaces relevant, evidence-based clinical practice guidelines (CPGs).
 
 **🔗 Live demo:** [cn-fet.streamlit.app](https://cn-fet.streamlit.app/)
 
-## What it does
+---
+
+## Contents
+
+- [How it works](#how-it-works)
+- [Screenshots](#screenshots)
+- [Features](#features)
+- [Tech stack](#tech-stack)
+- [Setup](#setup)
+- [Deploying to Streamlit Community Cloud](#deploying-to-streamlit-community-cloud)
+- [Disclaimer](#disclaimer)
+
+---
+
+## How it works
 
 **Agent 1 — Feature Extractor**
 Takes a free-text clinical note and extracts structured fields via an LLM (Groq / Llama 3.3 70B): patient demographics, vitals, diagnoses, symptoms, medications, allergies, lab results, imaging, risk factors, management plan, and severity.
@@ -19,11 +38,26 @@ Given the extracted diagnoses and specialty, this agent uses LLM tool-calling to
 
 Results are synthesized into a ranked list of guidelines, each tagged as **live-retrieved** (found via a real search) or **AI-knowledge** (from the model's training data), with organization, key recommendations, and source URL.
 
+---
+
 ## Screenshots
 
-| Enter Clinical Note | Feature Extraction | CPG Agent Results |
-|:---:|:---:|:---:|
-| ![Enter Clinical Note](assets/enter-clinical-note.png) | ![Feature Extraction](assets/feature-extraction.png) | ![CPG Agent](assets/cpg-agent.png) |
+### 1. Enter a clinical note
+Paste free-text notes or load a ready-made sample case (Cardiac, Oncology, Pediatric).
+
+![Enter Clinical Note](assets/enter-clinical-note.png)
+
+### 2. Agent 1 — Extracted clinical features
+Structured patient overview, vitals, diagnoses, medications, labs, and more.
+
+![Feature Extraction](assets/feature-extraction.png)
+
+### 3. Agent 2 — Suggested clinical practice guidelines
+Ranked guidelines pulled live from PubMed/NCCIH/WHO/AHRQ, with source links and key recommendations.
+
+![CPG Agent](assets/cpg-agent.png)
+
+---
 
 ## Features
 
