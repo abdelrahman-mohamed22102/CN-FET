@@ -19,6 +19,12 @@ Given the extracted diagnoses and specialty, this agent uses LLM tool-calling to
 
 Results are synthesized into a ranked list of guidelines, each tagged as **live-retrieved** (found via a real search) or **AI-knowledge** (from the model's training data), with organization, key recommendations, and source URL.
 
+## Screenshots
+
+| Enter Clinical Note | Feature Extraction | CPG Agent Results |
+|:---:|:---:|:---:|
+| ![Enter Clinical Note](assets/enter-clinical-note.png) | ![Feature Extraction](assets/feature-extraction.png) | ![CPG Agent](assets/cpg-agent.png) |
+
 ## Features
 
 - Sample clinical notes (Cardiac, Oncology, Pediatric) for quick demoing
