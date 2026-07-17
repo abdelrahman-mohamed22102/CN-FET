@@ -22,8 +22,8 @@ st.markdown("""
     .app-header p { color: #6b7280; font-size: 0.95rem; margin: 0.25rem 0 0 0; }
     .stTextArea textarea {
         font-size: 0.95rem; line-height: 1.6; border-radius: 10px;
-        border: 1.5px solid #374151; padding: 1rem; font-family: 'Georgia', serif;
-        background: #1e1e2e; color: #e5e7eb; caret-color: #e5e7eb;
+        border: 1.5px solid #d1d5db; padding: 1rem; font-family: 'Georgia', serif;
+        background: #ffffff; color: #1a1a2e; caret-color: #1a1a2e;
     }
     div[data-testid="stButton"] button {
         background: linear-gradient(135deg, #6366f1, #4f46e5);
