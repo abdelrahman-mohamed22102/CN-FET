@@ -2,6 +2,8 @@
 
 A multi-agent Streamlit app that turns unstructured clinical notes into structured data and automatically surfaces relevant, evidence-based clinical practice guidelines (CPGs).
 
+**🔗 Live demo:** [cn-fet.streamlit.app](https://cn-fet.streamlit.app/)
+
 ## What it does
 
 **Agent 1 — Feature Extractor**
